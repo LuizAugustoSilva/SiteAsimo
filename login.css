@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #003E76, #1552E9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+  
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: #FF7A00;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+.logo .bold {
+    color: #003E76;
+}
+  
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.login-form label {
+    margin-bottom: 0.5rem;
+    color: #003E76;
+    font-weight: 500;
+}
+  
+.login-form input {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+  
+.login-form .submit {
+    background-color: #FF7A00;
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-password {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.input-password input {
+    flex: 1;
+    padding-right: 2.5rem; /* espaço pro olho */
+}
+  
+.toggle-password {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 9%;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    width: 9%;
+    background-color: transparent;
+    border: 0;
+    img{
+        object-fit: contain;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+}
+/* Estilo do ícone de olho */
+.olho {
+    display: inline-block;
+    padding: 10px;
+    padding: trasparent;
+    border-radius: 50%; /* Torna a borda redonda */
+    transition: all 1s; /* Transição suave para a bolinha */
+}
+  
+  /* Estilo quando passar o mouse por cima */
+.olho:hover {
+    background-color: rgba(169, 169, 169, 0.5); /* Cor de fundo cinza claro */
+    border: 2px solid #808080; /* Borda cinza */
+}
+  
+.hidden{
+    opacity: 0;
+} 

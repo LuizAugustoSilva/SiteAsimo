@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fundação Asimo</title>
+
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Fonte Lastwaerk simulada com uma alternativa semelhante, pois não está no Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <h1 class="logo">Fundação <span class="bold">Asimo</span></h1>
+        <form class="login-form" action="">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required/>
+
+            <label for="password">Senha</label>
+            <div class="input-password">
+                <input type="password" id="password" placeholder="Digite sua senha" required/>
+                <button type="button" id="togglePassword" class="toggle-password"><img class="olho" src="Figuras/olho-fechado.png" alt=""></button>
+            </div>
+            <button class="submit" type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
