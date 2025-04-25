@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+
+    .navegationBar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        height: 20%;
+        background-color: #003E76;
+
+        img{
+            height: 5rem;
+            padding: 0;
+            object-fit: contain;
+        }
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            a{
+                text-decoration: none;
+                color: white;
+                font: bold;
+            }
+        }
+    }
+}
