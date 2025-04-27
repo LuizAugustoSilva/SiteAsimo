@@ -2,6 +2,7 @@
 
 const navUlRef = document.querySelector('#navUl');
 const viewPrincipal = document.querySelector('.view-principal');
+const imgLogo = document.querySelector('#imgLogo');
 
 //=============================== imagens background ==============================
 
@@ -24,6 +25,13 @@ const roll = (evt) => {
     });
 }
 
+const rollTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
 let index = 0;
 
 setInterval(() => {
@@ -40,3 +48,5 @@ setInterval(() => {
 for (let i = 0; i < navUlRef.childNodes.length; i++) {
     navUlRef.childNodes[i].addEventListener('click', roll);
 }
+
+imgLogo.addEventListener('click', rollTop);
